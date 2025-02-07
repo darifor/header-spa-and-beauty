@@ -1,0 +1,109 @@
+@use '../mixins' as *;
+@use '../variables' as *;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+
+    .logo {
+        width: 132px;
+        vertical-align: middle
+    }
+
+    .menu {
+
+        ul {
+            @include reset-list();
+
+            li {
+
+                a {
+                    font-size: 12px;
+                    color: $color-darkblue;
+                    font-weight: 400;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                        font-weight: 600;
+                    }
+
+                    img {
+                        width: 8px;
+                        margin-left: 5px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+
+    aside {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 41px;
+
+        .left {
+            max-width: 30%;
+
+            ul {
+                @include reset-list();
+                gap: 20px;
+
+                li {
+
+                    a {
+                        img {
+                            width: 20px;
+                            vertical-align: middle;
+                            transition: all 0.5s ease;
+
+                            &:hover {
+                                transform: scale(1.2) rotate(-40deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .right {
+
+            ul {
+                @include reset-list();
+                gap: 20px;
+
+                li {
+
+                    a {
+                        font-size: 12px;
+                        color: $color-darkblue;
+                        font-weight: 400;
+
+                        &:hover {
+                            text-decoration: none;
+                            font-weight: 600;
+                        }
+
+                        &.btn {
+                            @include button();
+
+                            &:hover {
+                                box-shadow: 5px 5px 5px rgba(100, 76, 76, 0.6);
+                                font-weight: 400;
+                                filter: brightness(1.3);
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+}

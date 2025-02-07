@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+@mixin reset-list() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+
+@mixin button {
+  display: inline-block;
+  padding: 7px 20px;
+  text-decoration: none;
+  border-radius: 32px;
+  background-color: $color-darkblue;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}

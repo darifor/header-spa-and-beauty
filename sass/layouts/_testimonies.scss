@@ -1,0 +1,49 @@
+@use '../mixins' as *;
+@use '../variables' as *;
+
+.testimonies {
+
+    &__comillas {
+        width: 20px;
+    }
+
+    &__message {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        color: $color-darkblue;
+        margin-bottom: 8px;
+    }
+
+    &__apos {
+        font-size: 30px;
+        font-weight: 700;
+        font-style: oblique;
+    }
+
+    &__author {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    &__box {
+        width: 265px;
+        //height: 160px;
+        border-radius: 10px;
+        padding: 15px;
+        backdrop-filter: blur(16px);
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+
+        &.one {
+            top: 256px;
+            right: 50px;
+        }
+
+        &.two {
+            top: 467px;
+            right: 123px;
+            z-index: 1;
+        }
+    }
+}

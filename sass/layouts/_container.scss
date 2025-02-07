@@ -1,0 +1,34 @@
+@use '../variables' as *;
+
+.container {
+    width: 100%;
+    min-height: 517px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 8.5%;
+    background-image: linear-gradient(to right, $color-whitebroken 66.66%, $color-background 33.33%);
+    position: relative;
+    //z-index: -2;
+
+    &__woman {
+        width: 516px;
+        position: absolute;
+        bottom: -181px;
+        right: 212px;
+        z-index: 0;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 71px;
+        right: 157px;
+        width: 27%;
+        height: 49%;
+        background-image: url('img/big-loto.svg');
+        opacity: 0.1;
+        mix-blend-mode: multiply;
+        background-size: cover;
+    }
+}
