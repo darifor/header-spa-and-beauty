@@ -8,6 +8,7 @@
 <p>En este proyecto encontrarás el encabezado del centro de belleza ficticio <b><i>"GlowQueen"</i></b>, una plataforma que garantiza productos naturales, tecnología avanzada y terapeutas altamente cualificados. El diseño utiliza las siguientes tecnologías:</p>
 
 - <b>HTML:</b> Estructura básica de la página y contenido.
+- <b>CSS:</b> Para configurar el diseño visual del contenido.
 - <b>Sass:</b> Preprocesador CSS para crear estilos modulares y mantenibles.
 - <b>Vite:</b> Herramienta de desarrollo web de alta velocidad para una experiencia de desarrollo más rápida.
 
